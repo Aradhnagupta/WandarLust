@@ -37,7 +37,7 @@ module.exports.login=async (req, res) => {
     console.log(req);
     req.flash("success", "Welcome to Wonderland!");
     if(!res.locals.redirectUrl){
-        res.redirect("/listing");
+       return res.redirect("/listing");
     }
     console.log(res.locals.redirectUrl);
     res.redirect(res.locals.redirectUrl);
