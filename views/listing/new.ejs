@@ -1,0 +1,100 @@
+<% layout('/layouts/boilerplate') -%>
+
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      
+            <br/> <br/>
+            <h1>Creat New Listing</h1>
+            <br/> 
+            <form method="POST" action="/listing" class="needs-validation" enctype="multipart/form-data" novalidate >
+        
+            <div class=" mb-3">
+                <label for="title" class="form-title">Title</label>
+                <input type="text" id="title" name="title" placeholder="name of property" class="form-control" required >
+
+                <div class="valid-feedback"> Looks good! </div>
+                <div class="invalid-feedback"> Please enter title </div>   
+            </div>
+           
+        
+           <div  class=" mb-3" >
+                <label for="description" class="form-description">Description</label>
+                <textarea name="description" id="description" class="form-control" ></textarea>
+
+         
+            </div>
+          
+            <div class=" mb-3">
+               
+                <label for="image" class="form-image">Upload Image</label>
+                <input type="file" id="image" name="image"  class="form-control"  required>
+
+
+                <div class="valid-feedback"> Looks good! </div>
+                <div class="invalid-feedback"> Please enter url </div> 
+            </div>
+           
+
+            <div class="row mb-3 ">
+             <div class="col-md-7">
+                <label for="dropdown">Catagory</label>
+                <select id="dropdown" name="catagory" class="form-control" required>
+                    <option value="treanding">Treanding</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="beach">Beach</option>
+                    <option value="iconic city">Iconic city</option>
+                    <option value="amazing pool">Amazing Pool</option>
+                    <option value="arctic">Arctic</option>
+                    <option value="amazing view">Amazing view</option>
+                    <option value="farm">Farm</option>
+                    <option value="tree house">Tree house</option>
+                    <option value="bread and breakfast">Bread and breakfast</option>
+                    <option value="palace">Palace</option>
+                   
+                    
+               </select>
+               <div class="valid-feedback"> Looks good! </div>
+                <div class="invalid-feedback"> Please enter location </div>
+            </div>
+
+
+                <div class="col-md-5">
+                    <label for="price" class="form-price">Price</label>
+                    <input type="number" id="price" name="price" placeholder="enter price" class="form-control" required>
+
+                    <div class="valid-feedback"> Looks good! </div>
+                    <div class="invalid-feedback"> Please enter valid price</div> 
+                </div>
+                
+            </div>
+
+            <div class="row mb-3 ">
+                <div class=" col-md-7">
+                    <label for="location" class="form-location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location" class="form-control"required >
+
+                    <div class="valid-feedback"> Looks good! </div>
+                    <div class="invalid-feedback"> Please enter location </div> 
+                </div>
+                <div class="col-md-5">
+                    <label for="country" class="form-country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="enter country" class="form-control" required>
+
+                    <div class="valid-feedback"> Looks good! </div>
+                    <div class="invalid-feedback"> Please enter country </div> 
+                </div>
+            </div>
+
+               
+
+            <br/>
+            <button type="submit" class="btn btn-dark add_btn">Add</button>
+            </form>
+           
+            
+    
+      
+    </div>
+</div>
+
+
